@@ -54,22 +54,6 @@ public class MainMenuScreen extends Pantalla {
 
 	@Override
 	public void render(float delta) {
-//		Gdx.gl.glClearColor(0.4706f, 0.2706f, 0.9216f, 1);
-//		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-//
-//		camara.update();
-//		renderer.setView(camara);
-//		renderer.render(layersToRender);
-//		game.batch.setProjectionMatrix(camara.combined);
-//
-//		// Se renderiza el stage
-//		stage.draw();
-//
-//		if (Gdx.input.isKeyPressed(Input.Keys.S)) {
-//			game.setScreen(new GameScreen(game));
-//			dispose();
-//		}	
-		//game.setScreen(new GameScreen(game));
 	}
 	
 	@Override

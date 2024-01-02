@@ -265,67 +265,6 @@ public class GameScreen extends Pantalla {
 			if (izquierda2) x2 -= VELOCIDAD * Gdx.graphics.getDeltaTime();
 		}
 		
-//		if (derecha1 && !izquierda1 ) {
-//			
-//				// J1
-//				if (!j1.nHitbox.overlaps(j2.nHitbox)) {
-//					if (j1.nHitbox.getX()+j1.nHitbox.getWidth() < vpLargo) {
-//						x1 += VELOCIDAD * Gdx.graphics.getDeltaTime();
-//						//game.batch.draw(j1.getFrameActual(Movimiento.ADELANTE), j1.nHitbox.getX(), j1.nHitbox.getY(), j1.getLargo()*escala, j1.getAlto()*escala);
-//					} else if (j1.nHitbox.getX()+j1.nHitbox.getWidth() >= vpLargo) {
-//						x1 += 0;
-//						//game.batch.draw(j1.getFrameActual(Movimiento.QUIETO), j1.nHitbox.getX(), j1.nHitbox.getY(), j1.getLargo()*escala, j1.getAlto()*escala);
-//					}
-//				} //else //game.batch.draw(j1.getFrameActual(Movimiento.QUIETO), j1.nHitbox.getX(), j1.nHitbox.getY(), j1.getLargo()*escala, j1.getAlto()*escala);
-//		}
-//		
-//		else if (derecha2 && !izquierda2) {
-//			
-//				// J2
-//				if (j2.nHitbox.getX()+j2.nHitbox.getWidth() < vpLargo) {
-//					x2 += VELOCIDAD * Gdx.graphics.getDeltaTime();
-//					//game.batch.draw(j2.getFrameActual(Movimiento.ATRAS), j2.nHitbox.getX()+j2.nHitbox.getWidth(), j2.nHitbox.getY(), -j2.getLargo()*escala, j2.getAlto()*escala);
-//				} else if (j2.nHitbox.getX()+j2.nHitbox.getWidth() >= vpLargo) {
-//					x2 += 0;
-//					//game.batch.draw(j2.getFrameActual(Movimiento.QUIETO), j2.nHitbox.getX()+j2.nHitbox.getWidth(), j2.nHitbox.getY(), -j2.getLargo()*escala, j2.getAlto()*escala);
-//				}
-//				
-//		}
-//		
-//		else if (izquierda1 && !derecha1) {
-//			
-//			// J1
-//			if (j1.nHitbox.getX() > 0) {
-//				x1 -= VELOCIDAD * Gdx.graphics.getDeltaTime();
-//				//game.batch.draw(j1.getFrameActual(Movimiento.ATRAS), j1.nHitbox.getX(), j1.nHitbox.getY(), j1.getLargo()*escala, j1.getAlto()*escala);
-//			} else if (j1.nHitbox.getX() <= 0) {
-//				x1 -= 0;
-//				//game.batch.draw(j1.getFrameActual(Movimiento.QUIETO), j1.nHitbox.getX(), j1.nHitbox.getY(), j1.getLargo()*escala, j1.getAlto()*escala);
-//			}
-//		}
-//		
-//		else if (izquierda2 && !derecha2) {
-//			
-//			// J2
-//			if (!j2.nHitbox.overlaps(j1.nHitbox)) {
-//				if (j2.nHitbox.getX() > 0) {
-//					x2 -= VELOCIDAD * Gdx.graphics.getDeltaTime();
-//					//game.batch.draw(j2.getFrameActual(Movimiento.ADELANTE), j2.nHitbox.getX()+j2.nHitbox.getWidth(), j2.nHitbox.getY(), -j2.getLargo()*escala, j2.getAlto()*escala);
-//				} else if (j2.nHitbox.getX() <= 0) {
-//					x2 -= 0;
-//					//game.batch.draw(j2.getFrameActual(Movimiento.QUIETO), j2.nHitbox.getX()+j2.nHitbox.getWidth(), j2.nHitbox.getY(), -j2.getLargo()*escala, j2.getAlto()*escala);
-//				} else if (j2.nHitbox.overlaps(j1.nHitbox)) {
-//					//game.batch.draw(j2.getFrameActual(Movimiento.QUIETO), j2.nHitbox.getX()+j2.nHitbox.getWidth(), j2.nHitbox.getY(), -j2.getLargo()*escala, j2.getAlto()*escala);
-//				}
-//			} //else game.batch.draw(j2.getFrameActual(Movimiento.QUIETO), j2.nHitbox.getX()+j2.nHitbox.getWidth(), j2.nHitbox.getY(), -j2.getLargo()*escala, j2.getAlto()*escala);
-//			
-//		}
-//		
-//		else {
-//			//game.batch.draw(j1.getFrameActual(Movimiento.QUIETO), j1.nHitbox.getX(), j1.nHitbox.getY(), j1.getLargo()*escala, j1.getAlto()*escala);
-//			//game.batch.draw(j2.getFrameActual(Movimiento.QUIETO), j2.nHitbox.getX()+j2.nHitbox.getWidth(), j2.nHitbox.getY(), -j2.getLargo()*escala, j2.getAlto()*escala);
-//		}
-		
 		j1.mover(x1);
 		j2.mover(x2);
 	}
